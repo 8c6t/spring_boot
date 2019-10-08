@@ -1,16 +1,20 @@
 package com.hachicore;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+@EnableConfigurationProperties(HolomanProperties.class)
 public class HolomanConfiguration {
 
     @Bean
-    public Holoman holoman() {
+    @ConditionalOnMissingBean
+    public Holoman holoman(HolomanProperties properties) {
         Holoman holoman = new Holoman();
-        holoman.setName("rokuthread");
-        holoman.setHowLong(20);
+        holoman.setName(properties.getName());
+        holoman.setHowLong(properties.getHowLong());
         return holoman;
     }
 

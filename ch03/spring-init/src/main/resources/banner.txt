@@ -1,0 +1,5 @@
+==============================
+Hachicore Spring Boot
+Spring Boot Ver: ${spring-boot.version}
+App Ver: ${application.version}
+==============================

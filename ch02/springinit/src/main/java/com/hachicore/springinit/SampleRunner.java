@@ -16,6 +16,7 @@ public class SampleRunner implements ApplicationRunner {
         System.out.println("====================");
         System.out.println(hachicoreProperties.getName());
         System.out.println(hachicoreProperties.getAge());
+        System.out.println(hachicoreProperties.getSessionTimeout());
         System.out.println("====================");
     }
 }

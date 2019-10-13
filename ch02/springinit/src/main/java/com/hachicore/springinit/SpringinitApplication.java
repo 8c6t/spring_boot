@@ -5,6 +5,7 @@ import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+// @EnableConfigurationProperties(HachicoreProperties.class)
 public class SpringinitApplication {
 
 	public static void main(String[] args) {

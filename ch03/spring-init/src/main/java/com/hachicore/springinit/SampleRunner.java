@@ -20,10 +20,10 @@ public class SampleRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        logger.info("==============================");
-        logger.info(hello);
-        logger.info(hachicoreProperties.getName());
-        logger.info(hachicoreProperties.getFullName());
-        logger.info("==============================");
+        logger.debug("==============================");
+        logger.debug(hello);
+        logger.debug(hachicoreProperties.getName());
+        logger.debug(hachicoreProperties.getFullName());
+        logger.debug("==============================");
     }
 }

@@ -10,7 +10,6 @@ public class SpringInitApplication {
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(SpringInitApplication.class);
         app.setWebApplicationType(WebApplicationType.NONE);
-        app.addListeners(new StartingListener());
         app.run(args);
     }
 

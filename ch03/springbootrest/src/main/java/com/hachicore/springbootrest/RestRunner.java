@@ -34,7 +34,7 @@ public class RestRunner implements ApplicationRunner {
 //        String worldResult = restTemplate.getForObject("http://localhost:8080/world", String.class);
 //        System.out.println(worldResult);
 
-        Mono<String> helloMono = webClient.get().uri("http://localhost:8080/hello")
+        Mono<String> helloMono = webClient.get().uri("/hello")
                 .retrieve()
                 .bodyToMono(String.class);
 
@@ -49,7 +49,7 @@ public class RestRunner implements ApplicationRunner {
             stopWatch.start();
         });
 
-        Mono<String> worldMono = webClient.get().uri("http://localhost:8080/world")
+        Mono<String> worldMono = webClient.get().uri("/world")
                 .retrieve()
                 .bodyToMono(String.class);
 

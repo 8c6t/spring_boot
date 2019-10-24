@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.hachicore</groupId>
-    <artifactId>springbootactuatordemo</artifactId>
+    <artifactId>demospringmonitor</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springbootactuatordemo</name>
+    <name>demospringmonitor</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -31,13 +31,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>de.codecentric</groupId>
-            <artifactId>spring-boot-admin-starter-client</artifactId>
+            <artifactId>spring-boot-admin-starter-server</artifactId>
             <version>2.1.6</version>
         </dependency>
 
